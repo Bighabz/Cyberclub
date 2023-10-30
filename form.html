@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+            <h1>El Camino College Cybersecurity Club</h1>
+    </header>
+    <nav>
+        <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="#">Resources</a></li>
+        </ul>
+    </nav>
+
+<form action="submit_form_url" method="post">
+    <!-- Name input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <!-- School Email input -->
+    <label for="schoolEmail">El Camino College School Email:</label>
+    <input type="email" id="schoolEmail" name="schoolEmail" pattern="[a-z0-9._%+-]+@elcamino.edu" required><br><br>
+
+    <!-- Major input -->
+    <label for="major">Major:</label>
+    <input type="text" id="major" name="major" required><br><br>
+
+    <!-- Discord question -->
+    <label>Do you have a Discord?</label><br>
+    <input type="radio" id="discordA" name="discord" value="A">
+    <label for="discordA">A. Yes</label><br>
+    
+    <input type="radio" id="discordB" name="discord" value="B">
+    <label for="discordB">B. No</label><br>
+
+    <input type="radio" id="discordC" name="discord" value="C">
+    <label for="discordC">C. I'm not sure</label><br>
+
+    <input type="radio" id="discordD" name="discord" value="D">
+    <label for="discordD">D. Prefer not to say</label><br><br>
+
+    <!-- Why join the club text area -->
+    <label for="reason">Why do you want to join the club?</label><br>
+    <textarea id="reason" name="reason" rows="4" required></textarea><br><br>
+
+    <!-- Submit & Reset buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>

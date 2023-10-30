@@ -48,6 +48,45 @@ main {
     padding: 20px 0;
 }
 
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+label, input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-gallery figure {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: calc(33.33% - 10px); 
+    margin: 5px;
+}
+
 footer {
     background-color: #333333;
     color: #FFFFFF;
